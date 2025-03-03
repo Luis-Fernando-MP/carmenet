@@ -9,101 +9,101 @@ importers:
   .:
     dependencies:
       '@lucide/lab':
-        specifier: ^0.1.2
+        specifier: 0.1.2
         version: 0.1.2
       '@trivago/prettier-plugin-sort-imports':
-        specifier: ^5.2.2
+        specifier: 5.2.2
         version: 5.2.2(prettier@3.5.2)
       '@unpic/react':
-        specifier: ^1.0.0
+        specifier: 1.0.0
         version: 1.0.0(next@15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       howler:
-        specifier: ^2.2.4
+        specifier: 2.2.4
         version: 2.2.4
       lucide-react:
-        specifier: ^0.475.0
+        specifier: 0.475.0
         version: 0.475.0(react@19.0.0)
       next:
         specifier: 15.1.7
         version: 15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.0)
       nextjs-toploader:
-        specifier: ^3.7.15
+        specifier: 3.7.15
         version: 3.7.15(next@15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react:
-        specifier: ^19.0.0
+        specifier: 19.0.0
         version: 19.0.0
       react-dom:
-        specifier: ^19.0.0
+        specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
       react-hot-toast:
-        specifier: ^2.5.2
+        specifier: 2.5.2
         version: 2.5.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       sass:
-        specifier: ^1.85.0
+        specifier: 1.85.0
         version: 1.85.0
       usehooks-ts:
-        specifier: ^3.1.1
+        specifier: 3.1.1
         version: 3.1.1(react@19.0.0)
       zustand:
-        specifier: ^5.0.3
+        specifier: 5.0.3
         version: 5.0.3(@types/react@19.0.10)(react@19.0.0)
     devDependencies:
       '@eslint/eslintrc':
-        specifier: ^3
+        specifier: '3'
         version: 3.3.0
       '@types/howler':
-        specifier: ^2.2.12
+        specifier: 2.2.12
         version: 2.2.12
       '@types/node':
-        specifier: ^20
+        specifier: '20'
         version: 20.17.19
       '@types/react':
-        specifier: ^19
+        specifier: '19'
         version: 19.0.10
       '@types/react-dom':
-        specifier: ^19
+        specifier: '19'
         version: 19.0.4(@types/react@19.0.10)
       eslint:
-        specifier: ^9
+        specifier: '9'
         version: 9.21.0(jiti@1.21.7)
       eslint-config-next:
         specifier: 15.1.7
         version: 15.1.7(eslint@9.21.0(jiti@1.21.7))(typescript@5.7.3)
       eslint-config-prettier:
-        specifier: ^10.0.1
+        specifier: 10.0.1
         version: 10.0.1(eslint@9.21.0(jiti@1.21.7))
       postcss:
-        specifier: ^8
+        specifier: '8'
         version: 8.5.3
       prettier:
-        specifier: ^3.5.2
+        specifier: 3.5.2
         version: 3.5.2
       prettier-plugin-tailwindcss:
-        specifier: ^0.6.11
+        specifier: 0.6.11
         version: 0.6.11(@trivago/prettier-plugin-sort-imports@5.2.2(prettier@3.5.2))(prettier@3.5.2)
       rimraf:
-        specifier: ^6.0.1
+        specifier: 6.0.1
         version: 6.0.1
       stylelint:
-        specifier: ^16.14.1
+        specifier: 16.14.1
         version: 16.14.1(typescript@5.7.3)
       stylelint-config-clean-order:
-        specifier: ^7.0.0
+        specifier: 7.0.0
         version: 7.0.0(stylelint@16.14.1(typescript@5.7.3))
       stylelint-config-standard:
-        specifier: ^37.0.0
+        specifier: 37.0.0
         version: 37.0.0(stylelint@16.14.1(typescript@5.7.3))
       stylelint-config-standard-scss:
-        specifier: ^14.0.0
+        specifier: 14.0.0
         version: 14.0.0(postcss@8.5.3)(stylelint@16.14.1(typescript@5.7.3))
       stylelint-config-two-dash-bem:
-        specifier: ^1.0.0
+        specifier: 1.0.0
         version: 1.0.0
       tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.17
+        specifier: 3.4.1
+        version: 3.4.1
       typescript:
-        specifier: ^5
+        specifier: '5'
         version: 5.7.3
 
 packages:
@@ -1531,6 +1531,10 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
+  lilconfig@2.1.0:
+    resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
+    engines: {node: '>=10'}
+
   lilconfig@3.1.3:
     resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
@@ -2241,8 +2245,8 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
-  tailwindcss@3.4.17:
-    resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
+  tailwindcss@3.4.1:
+    resolution: {integrity: sha512-qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3939,6 +3943,8 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
+  lilconfig@2.1.0: {}
+
   lilconfig@3.1.3: {}
 
   lines-and-columns@1.2.4: {}
@@ -4674,7 +4680,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwindcss@3.4.17:
+  tailwindcss@3.4.1:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -4685,7 +4691,7 @@ snapshots:
       glob-parent: 6.0.2
       is-glob: 4.0.3
       jiti: 1.21.7
-      lilconfig: 3.1.3
+      lilconfig: 2.1.0
       micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0

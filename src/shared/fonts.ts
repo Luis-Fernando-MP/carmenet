@@ -1,18 +1,18 @@
-import { Pixelify_Sans, VT323, Workbench } from 'next/font/google'
+import { Dancing_Script, Playfair_Display_SC, Roboto_Slab } from 'next/font/google'
 
-export const font1 = Pixelify_Sans({
+export const font1 = Playfair_Display_SC({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '700', '900'],
   variable: '--family1'
 })
 
-export const font2 = VT323({
+export const font2 = Roboto_Slab({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['200', '300', '400'],
   variable: '--family2'
 })
 
-export const font3 = Workbench({
+export const font3 = Dancing_Script({
   subsets: ['latin'],
   weight: ['400'],
   variable: '--familyEspecial'

@@ -1,21 +1,23 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://key-flare.vercel.app'),
-  title: 'Key Flare',
+  metadataBase: new URL('https://carmenet.vercel.app'),
+  title: 'Carmenet',
   description:
-    'Pon a prueba y mejora tu velocidad de escritura con Key Flare, un clon de Monkeytype creado para fines educativos. ¡Compite contra ti mismo y domina el teclado!',
+    'Carmenet Reserve es una colección de vinos finos inspirados en Francia con un toque californiano. Cultivados en nuestro viñedo familiar Forest Lake en Lodi, CA, desde 1983, nuestros vinos equilibrados y elegantes ofrecen lujo asequible. Descubre nuestra selección y brinda por nuevos descubrimientos.',
   keywords: [
-    'Key Flare',
-    'monkeytype',
-    'test de velocidad de escritura',
-    'mecanografía',
-    'práctica de escritura',
-    'teclado',
-    'wpm',
-    'cpm',
-    'mejorar velocidad',
-    'juegos de escritura'
+    'Carmenet',
+    'vinos californianos',
+    'vinos finos',
+    'vinícola',
+    'enología',
+    'vino tinto',
+    'vino blanco',
+    'degustación',
+    'vino artesanal',
+    'vino premium',
+    'lujo asequible',
+    'Forest Lake Vineyard'
   ],
   authors: [{ name: 'Luis MP', url: 'luisjp.vercel.app' }],
   creator: 'Luis MP',
@@ -24,15 +26,15 @@ export const metadata: Metadata = {
     icon: '/logo.svg'
   },
   openGraph: {
-    title: 'Key Flare - Mejora tu velocidad de escritura',
+    title: 'Carmenet Reserve Wines - Vinos de Carácter Distintivo',
     description:
-      'Pon a prueba y mejora tu velocidad de escritura con Key Flare, un clon de Monkeytype creado para fines educativos. ¡Compite contra ti mismo y domina el teclado!',
-    url: 'https://key-flare.vercel.app',
-    siteName: 'Key Flare',
+      'Carmenet Reserve es una colección de vinos finos inspirados en Francia con un toque californiano. Cultivados en nuestro viñedo familiar Forest Lake en Lodi, CA, desde 1983, nuestros vinos equilibrados y elegantes ofrecen lujo asequible. Descubre nuestra selección y brinda por nuevos descubrimientos.',
+    url: 'https://carmenet.vercel.app',
+    siteName: 'Carmenet Reserve Wines',
     images: [
       {
         url: '/opengraph.png',
-        alt: 'Key Flare Logo',
+        alt: 'Carmenet Reserve Wines Logo',
         width: 1200,
         height: 630
       }
@@ -41,13 +43,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Key Flare - Mejora tu velocidad de escritura',
+    title: 'Carmenet Reserve Wines - Vinos de Carácter Distintivo',
     description:
-      'Pon a prueba y mejora tu velocidad de escritura con Key Flare, un clon de Monkeytype creado para fines educativos. ¡Compite contra ti mismo y domina el teclado!',
+      'Carmenet Reserve es una colección de vinos finos inspirados en Francia con un toque californiano. Cultivados en nuestro viñedo familiar Forest Lake en Lodi, CA, desde 1983, nuestros vinos equilibrados y elegantes ofrecen lujo asequible. Descubre nuestra selección y brinda por nuevos descubrimientos.',
     images: [
       {
         url: '/opengraph.png',
-        alt: 'Key Flare Logo'
+        alt: 'Carmenet Reserve Wines Logo'
       }
     ]
   }

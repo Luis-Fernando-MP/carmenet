@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-template",
-  "version": "1.2.0",
+  "name": "Carmenet",
+  "version": "1.2.1",
   "private": true,
   "scripts": {
     "dev": "rimraf .next && pnpm store prune && next dev --turbopack",

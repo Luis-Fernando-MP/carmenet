@@ -51,12 +51,6 @@ body {
 
   background-color: rgb($bg1);
 
-  canvas {
-    image-rendering: -webkit-crisp-edges;
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
-  }
-
   .icon,
   .lucide {
     display: block;
@@ -66,7 +60,7 @@ body {
   }
 
   ::selection {
-    color: rgb($fn1);
+    color: rgb($fnA);
     background-color: rgb($tn1);
   }
 
