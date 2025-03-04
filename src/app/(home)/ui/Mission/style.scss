@@ -1,0 +1,57 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/defs' as d;
+
+.mission {
+  gap: v.$padding * 2 0;
+
+  &-slug {
+    text-align: center;
+  }
+
+  &-paragraph {
+    max-width: 600px;
+    font-size: v.$fH3;
+    text-align: center;
+  }
+
+  &-video {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 500px;
+    border-radius: v.$radius;
+
+    background-color: rgb(v.$bg1);
+  }
+
+  &-company {
+    position: absolute;
+    z-index: 1;
+    top: v.$padding;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include d.flex($dir: row, $ali: center);
+
+    justify-content: center;
+
+    padding: v.$padding;
+    border-radius: v.$radius;
+
+    background-color: rgb(v.$bg1, 0.5);
+    backdrop-filter: blur(30px);
+
+    &__bronco {
+      overflow: hidden;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  &-videoPlayer {
+    position: relative;
+  }
+}

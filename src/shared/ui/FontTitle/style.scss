@@ -1,0 +1,52 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/defs' as d;
+
+.fontTitle {
+  width: fit-content;
+  min-width: 270px;
+  padding: v.$padding 0;
+
+  @include d.flex($ali: center);
+
+  &-text {
+    @include d.flex($dir: row, $ali: center);
+
+    flex-wrap: wrap;
+    text-align: center;
+    text-transform: uppercase;
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  &-line {
+    position: relative;
+    width: 100%;
+    padding: v.$padding 0;
+
+    &::before,
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      background-color: rgb(v.$bg3);
+    }
+
+    &::before {
+      width: 85%;
+      height: 2px;
+      border-radius: 5px;
+    }
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+  }
+}

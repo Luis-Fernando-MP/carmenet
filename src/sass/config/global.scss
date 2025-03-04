@@ -141,6 +141,15 @@ body {
     cursor: pointer;
   }
 
+  .font3 {
+    font-family: $font3;
+    color: rgb($tn1);
+  }
+
+  .border {
+    border: 1.5px solid rgb($bg3);
+  }
+
   .active {
     color: rgb($fnA);
     background-color: rgb($tn1);

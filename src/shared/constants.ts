@@ -3,3 +3,4 @@ export enum DEV_MODE {
   DEV = 'development'
 }
 export const DEV_ENV = process.env.NODE_ENV ?? DEV_MODE.DEV
+export const CARMENET_WEBSITE = 'https://www.carmenetreserve.com'
