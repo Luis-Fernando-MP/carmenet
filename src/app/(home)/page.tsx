@@ -2,6 +2,7 @@ import Nav from '@/shared/ui/Nav'
 import type { JSX } from 'react'
 
 import './style.scss'
+import AboutUs from './ui/AboutUs'
 import Header from './ui/Header'
 import Mission from './ui/Mission'
 import Poetry from './ui/Poetry'
@@ -15,6 +16,7 @@ const Home = (): JSX.Element => {
       <Header />
       <Mission />
       <Poetry />
+      <AboutUs />
     </main>
   )
 }

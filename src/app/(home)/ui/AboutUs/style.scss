@@ -1,0 +1,60 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/defs' as d;
+
+.aboutUs {
+  gap: v.$padding * 2 0;
+
+  &-bento {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: v.$padding;
+
+    width: 100%;
+  }
+
+  &-item {
+    justify-content: center;
+
+    min-height: 300px;
+    padding: v.$padding;
+    border-radius: v.$radius;
+
+    background-color: rgb(v.$bg2, 0.5);
+
+    @include d.flex($ali: center);
+
+    &:nth-child(1) {
+      border-top-left-radius: v.$radius * 3;
+    }
+
+    &:nth-child(2) {
+      border-top-right-radius: v.$radius * 3;
+    }
+
+    &:nth-child(3) {
+      border-bottom-right-radius: v.$radius * 3;
+      border-bottom-left-radius: v.$radius * 3;
+    }
+
+    h4,
+    h2 {
+      text-align: center;
+    }
+
+    h4 {
+      color: rgb(v.$fn1);
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: rgb(v.$tn1);
+      text-transform: uppercase;
+    }
+
+    &__paragraph {
+      max-width: 350px;
+      text-align: center;
+    }
+  }
+}
