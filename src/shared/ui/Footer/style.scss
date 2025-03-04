@@ -1,0 +1,89 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/defs' as d;
+
+.footer {
+  width: 100%;
+  padding: v.$padding * 3 0;
+
+  &,
+  &-copyright {
+    @include d.flex($ali: center);
+
+    border-top: 1.5px solid rgb(v.$bg3);
+  }
+
+  &-carmenet {
+    display: grid;
+    grid-template-columns: 1fr 200px 100px;
+    gap: v.$padding;
+
+    width: 900px;
+    height: fit-content;
+    padding-bottom: v.$padding * 3;
+  }
+
+  &-phone {
+    font-family: v.$font2;
+    font-weight: lighter;
+  }
+
+  &-info,
+  &-legal,
+  &-follow {
+    > h3 {
+      height: 40px;
+    }
+
+    @include d.flex;
+  }
+
+  &-logo {
+    overflow: hidden;
+    display: block;
+    width: 150px;
+  }
+
+  &-link {
+    color: rgb(v.$fn2);
+  }
+
+  &-fn {
+    color: rgb(v.$tn1);
+  }
+
+  &-follow {
+    &__social {
+      @include d.flex($dir: row, $gap: 5px);
+
+      a {
+        padding: v.$padding * 0.5;
+      }
+    }
+
+    &__trade {
+      width: fit-content;
+      padding: 5px v.$padding * 1.5;
+      border-radius: 5px;
+      font-weight: bolder;
+
+      @include d.flex($dir: row, $gap: 5px, $ali: center);
+    }
+  }
+
+  &-copyright {
+    width: 900px;
+    padding-top: v.$padding * 3;
+
+    p,
+    h4 {
+      width: 300px;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: v.$fP;
+      font-weight: 300;
+      color: rgb(v.$fn1);
+    }
+  }
+}

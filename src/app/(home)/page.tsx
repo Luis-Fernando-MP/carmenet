@@ -1,3 +1,4 @@
+import Footer from '@/shared/ui/Footer'
 import Nav from '@/shared/ui/Nav'
 import type { JSX } from 'react'
 
@@ -21,6 +22,7 @@ const Home = (): JSX.Element => {
       <AboutUs />
       <Winemaker />
       <Testimonies />
+      <Footer />
     </main>
   )
 }
