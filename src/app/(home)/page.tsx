@@ -16,13 +16,15 @@ const Home = (): JSX.Element => {
       <div className='blackGradient' />
       <div className='mainGradient home-gradient' />
       <Nav />
-      <Header />
-      <Mission />
-      <Poetry />
-      <AboutUs />
-      <Winemaker />
-      <Testimonies />
-      <Footer />
+      <div className='home-wrapper'>
+        <Header />
+        <Mission />
+        <Poetry />
+        <AboutUs />
+        <Winemaker />
+        <Testimonies />
+        <Footer />
+      </div>
     </main>
   )
 }

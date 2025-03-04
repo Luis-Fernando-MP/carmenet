@@ -8,6 +8,13 @@
 
   @include d.flex($ali: center);
 
+  &-wrapper {
+    width: 100%;
+    height: 100%;
+
+    @include d.flex($ali: center, $gap: 100px);
+  }
+
   &-section {
     width: 900px;
     max-width: 900px;
