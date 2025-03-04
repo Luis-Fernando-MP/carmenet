@@ -6,6 +6,8 @@
   width: 100%;
   height: fit-content;
 
+  @include d.flex($ali: center);
+
   &-section {
     width: 900px;
     max-width: 900px;
@@ -40,6 +42,4 @@
     border-bottom-right-radius: 20%;
     border-bottom-left-radius: 20%;
   }
-
-  @include d.flex($ali: center);
 }

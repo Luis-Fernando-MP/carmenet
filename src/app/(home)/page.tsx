@@ -6,6 +6,7 @@ import AboutUs from './ui/AboutUs'
 import Header from './ui/Header'
 import Mission from './ui/Mission'
 import Poetry from './ui/Poetry'
+import Testimonies from './ui/Testimonies'
 import Winemaker from './ui/Winemaker'
 
 const Home = (): JSX.Element => {
@@ -19,6 +20,7 @@ const Home = (): JSX.Element => {
       <Poetry />
       <AboutUs />
       <Winemaker />
+      <Testimonies />
     </main>
   )
 }
