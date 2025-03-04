@@ -19,6 +19,7 @@ const RootLayout = async ({ children }: IRootLayout): Promise<JSX.Element> => {
     <html lang='es'>
       <body className={`${bodyFonts} antialiased`}>
         <NextTopLoader color='rgb(var(--tn-primary))' showSpinner={false} />
+        <div className='mainBackground' />
         <Hydration>{children}</Hydration>
         <Offline />
         {/* <LoaderPage /> */}

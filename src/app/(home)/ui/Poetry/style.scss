@@ -1,0 +1,54 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/defs' as d;
+
+.poetry {
+  position: relative;
+  width: 100%;
+
+  &-wrapper {
+    position: relative;
+    gap: v.$padding * 4;
+    align-items: flex-start;
+    margin: auto;
+  }
+
+  &-gradient {
+    z-index: -1;
+    top: 50%;
+    left: -250px;
+    transform: translateY(-50%);
+
+    width: 500px;
+    height: 500px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  &-title,
+  .font3 {
+    font-size: 7rem;
+    line-height: 7.5rem;
+    text-transform: uppercase;
+  }
+
+  &-paragraph {
+    font-size: 1.5rem;
+  }
+
+  &-stats {
+    @include d.flex($gap: 0);
+  }
+
+  &-stat {
+    @include d.flex($dir: row, $ali: center, $gap: v.$padding * 2);
+
+    h2 {
+      font-family: v.$font2;
+      font-size: 7rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}

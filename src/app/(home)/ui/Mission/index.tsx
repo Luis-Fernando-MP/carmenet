@@ -10,7 +10,7 @@ import './style.scss'
 
 const Mission = (): JSX.Element => {
   return (
-    <section className='mission home-section'>
+    <section className='mission home-section' id='mission'>
       <h4 className='mission-slug'>CARMENET</h4>
       <FontTitle principal='Nuestra' secondary='Misión' />
       <p className='mission-paragraph'>
