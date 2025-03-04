@@ -1,0 +1,36 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/defs' as d;
+
+.winemaker {
+  gap: v.$padding * 1.5 0;
+
+  &-author {
+    overflow: hidden;
+    width: 350px;
+    box-shadow: inset -4px -20px 20px 20px rgb(v.$bg1);
+
+    img {
+      position: relative;
+      z-index: -1;
+      display: block;
+    }
+  }
+
+  &-phrase,
+  .font3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &-paragraph,
+  span {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  &-paragraph span {
+    color: rgb(v.$tn1);
+  }
+}

@@ -6,6 +6,7 @@ import './style.scss'
 const AboutUs = (): JSX.Element => {
   return (
     <section className='aboutUs home-section' id='aboutUs'>
+      <h4>CAR‑MEN‑AY</h4>
       <FontTitle principal='Sobre' secondary='Nosotros' />
 
       <article className='aboutUs-bento'>
