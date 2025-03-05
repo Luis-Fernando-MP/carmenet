@@ -1,0 +1,46 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/defs' as d;
+@use '@sass/utils/scrollbar' as *;
+
+.selectedWine {
+  width: 100%;
+  max-width: 900px;
+  height: fit-content;
+
+  @include d.flex($dir: row, $gap: v.$padding * 2);
+
+  &-image {
+    overflow: hidden;
+
+    width: 450px;
+    min-width: 450px;
+    height: fit-content;
+    border-radius: v.$radius;
+
+    filter: grayscale(1);
+  }
+
+  &-details {
+    @include d.flex;
+
+    h3 {
+      font-size: 1.7rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &-list {
+    @include d.flex($gap: v.$padding * 0.5);
+
+    padding-left: v.$padding * 3;
+  }
+
+  &-listItem {
+    list-style: disc;
+  }
+
+  &-marker {
+    font-weight: bold;
+    color: rgb(v.$fn1);
+  }
+}

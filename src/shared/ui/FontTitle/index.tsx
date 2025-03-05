@@ -5,15 +5,17 @@ import './style.scss'
 interface IFontTitle {
   principal: string
   secondary?: string
+  hideLine?: boolean
+  className?: string
 }
-const FontTitle = ({ principal, secondary }: IFontTitle): JSX.Element => {
+const FontTitle = ({ principal, secondary, hideLine = false, className }: IFontTitle): JSX.Element => {
   return (
     <section className='fontTitle'>
-      <div className='fontTitle-text'>
+      <div className={`fontTitle-text ${className ?? ''}`}>
         <h3>{principal}</h3>
         <h3 className='font3'>{secondary}</h3>
       </div>
-      <div className='fontTitle-line' />
+      {!hideLine && <div className='fontTitle-line' />}
     </section>
   )
 }
