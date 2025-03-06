@@ -17,6 +17,7 @@ const Home = (): JSX.Element => {
       <div className='blackGradient' />
       <div className='mainGradient home-gradient' />
       <Nav />
+
       <div className='home-wrapper'>
         <Header />
         <Mission />

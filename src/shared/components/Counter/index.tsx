@@ -21,7 +21,7 @@ const Counter = ({ number, duration = 2 }: TCounter) => {
 
   useEffect(() => {
     if (!isInView || !Number(number.replace(',', '.'))) return
-    let finalNumber = Number(number.replace(',', '.'))
+    const finalNumber = Number(number.replace(',', '.'))
     animate(count, finalNumber, {
       duration: duration,
       ease: 'easeOut'

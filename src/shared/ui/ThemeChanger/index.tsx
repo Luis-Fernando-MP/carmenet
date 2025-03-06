@@ -18,7 +18,7 @@ const ThemeChanger = (): JSX.Element => {
     const initialTheme = savedTheme ?? (prefersDark ? 'dark' : 'light')
     setTheme(initialTheme as 'light' | 'dark')
     document.documentElement.setAttribute('data-theme', initialTheme)
-  }, [])
+  }, [setTheme])
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light'

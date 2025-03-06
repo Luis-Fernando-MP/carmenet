@@ -46,8 +46,8 @@ const Winemaker = (): JSX.Element => {
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.8 }}
       >
-        "<span className='font3'>Quiero hacer vinos que todos puedan disfrutar</span>y compartir con familiares y amigos alrededor
-        de la mesa"
+        &quot;<span className='font3'>Quiero hacer vinos que todos puedan disfrutar</span>y compartir con familiares y amigos
+        alrededor de la mesa&quot;
       </motion.h2>
 
       <motion.p
