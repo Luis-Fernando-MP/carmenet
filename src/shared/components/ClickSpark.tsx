@@ -1,3 +1,5 @@
+'use client'
+
 import { FC, useCallback, useEffect, useRef } from 'react'
 
 interface ClickSparkProps {
@@ -139,8 +141,6 @@ const ClickSpark: FC<ClickSparkProps> = ({
     (e: globalThis.MouseEvent): void => {
       const canvas = canvasRef.current
       if (!canvas) return
-      const target = e.target as HTMLElement
-      if (!target.closest('button, a, img, [data-button]') || e.ctrlKey) return
       const rect = canvas.getBoundingClientRect()
       const x = e.clientX - rect.left
       const y = e.clientY - rect.top
@@ -169,12 +169,12 @@ const ClickSpark: FC<ClickSparkProps> = ({
     <canvas
       ref={canvasRef}
       style={{
-        zIndex: '10',
+        zIndex: '11',
         width: '100%',
         height: '100%',
         display: 'block',
         userSelect: 'none',
-        position: 'absolute',
+        position: 'fixed',
         pointerEvents: 'none'
       }}
     />

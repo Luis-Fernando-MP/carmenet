@@ -22,6 +22,17 @@
   --p-font-size: 0.8rem;
 }
 
+[data-theme='light'] {
+  --bg-primary: 255, 255, 255;
+  --bg-secondary: 245, 245, 245;
+  --bg-tertiary: 230, 230, 230;
+  --fnt-primary: 10, 10, 10;
+  --fnt-secondary: 80, 80, 80;
+  --fnt-active: 255, 255, 255;
+  --tn-primary: 139, 0, 0;
+  --tn-secondary: 178, 34, 34;
+}
+
 $fXl: var(--xl-font-size);
 $fH1: var(--h1-font-size);
 $fH2: var(--h2-font-size);

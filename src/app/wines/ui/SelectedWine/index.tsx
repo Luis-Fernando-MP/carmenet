@@ -1,8 +1,12 @@
 'use client'
 
+import { CARMENET_STORE } from '@/shared/constants'
 import { newKey } from '@/shared/key'
 import { Image } from '@unpic/react'
 import UseWineStoreStore from '@wines/store/useWineStore'
+import { motion } from 'framer-motion'
+import { ShoppingCart } from 'lucide-react'
+import Link from 'next/link'
 import type { JSX } from 'react'
 
 import { wines } from '../../store/wines'
@@ -14,55 +18,89 @@ const SelectedWine = (): JSX.Element | null => {
   const { background, notes, pairing, mix, moreInfo } = wines[wineId]
 
   return (
-    <article className='selectedWine'>
-      <section className='selectedWine-image'>
+    <article className='selectedWine' id='wine-detail'>
+      <motion.section
+        className='selectedWine-image'
+        initial={{ scale: 0.95, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.2, once: true }}
+      >
         <Image src={background} alt={`${wineId} background`} layout='fullWidth' />
-      </section>
+      </motion.section>
 
       <section className='selectedWine-details'>
-        <div className='selectedWine-notes'>
+        <motion.div
+          className='selectedWine-notes'
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
           <h3>Notas de cata</h3>
-          <p>{notes}</p>
-        </div>
+          <p dangerouslySetInnerHTML={{ __html: notes }} />
+        </motion.div>
 
-        <div className='selectedWine-pairing'>
+        <motion.div
+          className='selectedWine-pairing'
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
           <h3>Maridaje perfecto</h3>
           <ul className='selectedWine-list'>
-            {pairing.map(item => {
-              return (
-                <li className='selectedWine-listItem' key={newKey()}>
-                  <p>{item}</p>
-                </li>
-              )
-            })}
+            {pairing.map((item, index) => (
+              <motion.li
+                className='selectedWine-listItem'
+                key={newKey()}
+                initial={{ x: -20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.2, delay: 1 + index * 0.1 }}
+              >
+                <p>{item}</p>
+              </motion.li>
+            ))}
           </ul>
-        </div>
+        </motion.div>
 
         <div className='selectedWine-pairing'>
           <h3>Mezcla</h3>
           <ul className='selectedWine-list'>
-            {mix.map(item => {
-              return (
-                <li className='selectedWine-listItem' key={newKey()}>
-                  <p dangerouslySetInnerHTML={{ __html: item }} />
-                </li>
-              )
-            })}
+            {mix.map((item, index) => (
+              <motion.li
+                className='selectedWine-listItem'
+                key={newKey()}
+                initial={{ x: -20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.2, delay: 1.2 + index * 0.1 }}
+              >
+                <p dangerouslySetInnerHTML={{ __html: item }} />
+              </motion.li>
+            ))}
           </ul>
         </div>
 
         <div className='selectedWine-pairing'>
           <h3>Información técnica</h3>
           <ul className='selectedWine-list'>
-            {moreInfo.map(info => {
-              return (
-                <li className='selectedWine-listItem' key={newKey()}>
-                  <p>{info}</p>
-                </li>
-              )
-            })}
+            {moreInfo.map((info, index) => (
+              <motion.li
+                className='selectedWine-listItem'
+                key={newKey()}
+                initial={{ x: -20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.2, delay: 1.3 + index * 0.1 }}
+              >
+                <p>{info}</p>
+              </motion.li>
+            ))}
           </ul>
         </div>
+
+        <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.6, delay: 2 }}>
+          <Link href={CARMENET_STORE} className='selectedWine-link active'>
+            <ShoppingCart />
+            Comprar en Cellar 8
+          </Link>
+        </motion.div>
       </section>
     </article>
   )

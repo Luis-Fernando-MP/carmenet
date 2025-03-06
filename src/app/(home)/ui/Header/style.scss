@@ -11,9 +11,9 @@
     @include d.flex;
 
     img {
-      width: 150px;
-      height: 200px;
-      object-fit: contain;
+      width: 70px;
+      height: 120px;
+      object-fit: cover;
     }
   }
 

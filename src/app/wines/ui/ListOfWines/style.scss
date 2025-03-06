@@ -1,0 +1,76 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/defs' as d;
+@use '@sass/utils/scrollbar' as *;
+
+.listOfWines {
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  height: fit-content;
+
+  @include d.flex($dir: row, $gap: v.$padding * 5, $ali: center);
+
+  &-image {
+    overflow: hidden;
+
+    width: 100px;
+    height: 400px;
+    max-height: 400px;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &-item {
+    position: relative;
+
+    width: 230px;
+    height: 550px;
+    padding: v.$padding * 2;
+    border-radius: v.$radius;
+
+    @include d.flex($ali: end);
+
+    transition: background-color 0.3s ease-in-out;
+
+    &.selected {
+      border-color: rgb(v.$tn1);
+      border-style: dashed;
+      background-color: rgb(v.$tn1, 0.3);
+
+      .listOfWines-image {
+        transform: scale(1.1);
+      }
+    }
+
+    &:hover {
+      .listOfWines-image {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &-title {
+    position: absolute;
+    top: v.$padding * 2;
+    left: v.$padding * 2;
+    transform: rotate(180deg);
+
+    writing-mode: vertical-rl;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  &-price {
+    position: relative;
+    right: v.$padding * -5;
+
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(v.$tn1);
+    text-transform: uppercase;
+  }
+}

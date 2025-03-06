@@ -43,4 +43,22 @@
     font-weight: bold;
     color: rgb(v.$fn1);
   }
+
+  &-brand {
+    font-weight: bold;
+    color: rgb(v.$tn1);
+  }
+
+  &-link {
+    width: 100%;
+
+    @include d.flex($dir: row, $gap: v.$padding * 0.5);
+
+    width: fit-content;
+    padding: v.$padding;
+    border-radius: v.$radius;
+
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
 }

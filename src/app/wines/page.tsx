@@ -4,6 +4,7 @@ import Nav from '@/shared/ui/Nav'
 import type { JSX } from 'react'
 
 import './style.scss'
+import ListOfWines from './ui/ListOfWines'
 import SelectedWine from './ui/SelectedWine'
 
 const Wines = (): JSX.Element => {
@@ -15,6 +16,7 @@ const Wines = (): JSX.Element => {
       <div className='wines-wrapper'>
         <FontTitle principal='La excelencia de' secondary='Sonoma' hideLine className='wines-headTitle' />
         <SelectedWine />
+        <ListOfWines />
         <Footer />
       </div>
     </main>

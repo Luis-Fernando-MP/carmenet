@@ -1,9 +1,10 @@
 import { CARMENET_WEBSITE } from '@/shared/constants'
-import { Image } from '@unpic/react'
 import { GlobeIcon } from 'lucide-react'
 import Link from 'next/link'
 import type { JSX } from 'react'
 
+import LoadLogo from '../LoadLogo'
+import ThemeChanger from '../ThemeChanger'
 import './style.scss'
 
 const links = {
@@ -17,7 +18,7 @@ const Nav = (): JSX.Element => {
   return (
     <nav className='nav'>
       <Link href='/' className='nav-logo'>
-        <Image src='/logoV2.svg' layout='fullWidth' alt='carmenet logo' />
+        <LoadLogo src='/logoV2' />
       </Link>
 
       <div className='nav-sites'>
@@ -34,6 +35,7 @@ const Nav = (): JSX.Element => {
           <GlobeIcon />
           Website
         </Link>
+        <ThemeChanger />
       </div>
     </nav>
   )

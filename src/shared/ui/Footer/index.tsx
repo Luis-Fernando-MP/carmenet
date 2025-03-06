@@ -1,9 +1,9 @@
 import { CARMENET_WEBSITE } from '@/shared/constants'
-import { Image } from '@unpic/react'
 import { BaggageClaimIcon, FacebookIcon, InstagramIcon, TwitterIcon } from 'lucide-react'
 import Link from 'next/link'
 import type { JSX } from 'react'
 
+import LoadLogo from '../LoadLogo'
 import './style.scss'
 
 const Footer = (): JSX.Element => {
@@ -12,7 +12,7 @@ const Footer = (): JSX.Element => {
       <article className='footer-carmenet'>
         <section className='footer-info'>
           <Link href={CARMENET_WEBSITE} target='_blank' rel='noopener noreferrer' className='footer-logo'>
-            <Image src='/logoV2.svg' alt='carmenet logo' layout='fullWidth' />
+            <LoadLogo src='/logoV2' />
           </Link>
 
           <p>

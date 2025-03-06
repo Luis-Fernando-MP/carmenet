@@ -1,6 +1,9 @@
+'use client'
+
 import { newKey } from '@/shared/key'
 import FontTitle from '@/shared/ui/FontTitle'
 import { Image } from '@unpic/react'
+import { motion } from 'framer-motion'
 import type { JSX } from 'react'
 
 import './style.scss'
@@ -39,21 +42,57 @@ const testimonies = [
 const Testimonies = (): JSX.Element => {
   return (
     <section className='testimonies home-section'>
-      <FontTitle principal='Lo que' secondary='Dicen de nosotros' />
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.3 }}
+      >
+        <FontTitle principal='Lo que' secondary='Dicen de nosotros' />
+      </motion.div>
+
       <article className='testimonies-bento'>
-        <div className='mainGradient testimonies-gradient' />
-        {testimonies.map(testimony => {
+        <motion.div
+          className='mainGradient testimonies-gradient'
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2 }}
+        />
+
+        {testimonies.map((testimony, index) => {
           const { phrase, author, rol, photo } = testimony
           return (
             <div className='testimonies-item border' key={newKey()}>
-              <p className='testimonies-phrase'>{phrase}</p>
-              <div className='testimonies-author'>
+              <motion.p
+                className='testimonies-phrase'
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.5 + index * 0.2 }}
+              >
+                {phrase}
+              </motion.p>
+
+              <motion.div
+                className='testimonies-author'
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.8 + index * 0.2 }}
+              >
                 <Image src={photo} alt={author} layout='fullWidth' />
-                <div className='testimonies-info'>
+                <motion.div
+                  className='testimonies-info'
+                  initial={{ x: 20, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 1.2 + index * 0.2 }}
+                >
                   <h4>{author}</h4>
                   <p>{rol}</p>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
           )
         })}

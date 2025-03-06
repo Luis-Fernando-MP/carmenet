@@ -22,7 +22,6 @@ const RootLayout = async ({ children }: IRootLayout): Promise<JSX.Element> => {
         <div className='mainBackground' />
         <Hydration>{children}</Hydration>
         <Offline />
-        {/* <LoaderPage /> */}
         <Toaster
           position='top-center'
           toastOptions={{
