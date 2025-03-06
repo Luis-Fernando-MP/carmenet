@@ -1,4 +1,3 @@
-import Hydration from '@/shared/components/Hydration'
 import Offline from '@/shared/components/Offline'
 import { bodyFonts } from '@/shared/fonts'
 import '@sass/config/global.scss'
@@ -21,9 +20,7 @@ const RootLayout = async ({ children }: IRootLayout): Promise<JSX.Element> => {
       <body className={`${bodyFonts} antialiased`}>
         <NextTopLoader color='rgb(var(--tn-primary))' showSpinner={false} />
         <div className='mainBackground' />
-        <Hydration>
-          <ViewTransitions>{children}</ViewTransitions>
-        </Hydration>
+        <ViewTransitions>{children}</ViewTransitions>
         <Offline />
         <Toaster
           position='top-center'

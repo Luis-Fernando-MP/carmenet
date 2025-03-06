@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍷 CARMENET Clone Website
 
-## Getting Started
+<div style="margin: 20px 0">
+  <img src="./images/04.png" alt="Home Section" width="800" height="auto" style="border-radius: 8px" />
+</div>
+<div style="margin: 20px 0">
+  <img src="./images/01.png" alt="Wines Section" width="800" height="auto" style="border-radius: 8px" />
+</div>
+<div style="margin: 20px 0">
+  <img src="./images/02.png" alt="Wine Section" width="800" height="auto" style="border-radius: 8px" />
+</div>
+<div style="margin: 20px 0">
+  <img src="./images/03.png" alt="WineMaker Section" width="800" height="auto" style="border-radius: 8px" />
+</div>
 
-First, run the development server:
+Un proyecto educativo que recrea la esencia de CARMENET, una prestigiosa bodega de California, a través de una moderna aplicación web desarrollada con Next.js 14.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📜 Sobre CARMENET
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+CARMENET (pronunciado "Car-men-ay") es una distinguida colección de vinos de California, fundada en 1983. La bodega se ha destacado por:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Reconocida como Rising Star por Beverage Dynamics desde 2015
+- Destacada como Hot Prospect en Shanken Impact (2015-2018)
+- Comprometida con la elaboración de vinos consistentes y tradicionales
+- Enfocada en ofrecer vinos elegantes a precios accesibles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Winemaker Section](./public/images/winemaker.png)
 
-## Learn More
+## 🎨 Sobre este Proyecto
 
-To learn more about Next.js, take a look at the following resources:
+Este clon educativo nace de mi pasión por el desarrollo web y la admiración por la marca CARMENET. El proyecto busca:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Recrear la experiencia visual y funcional del sitio original
+- Implementar las mejores prácticas de desarrollo moderno
+- Servir como ejemplo de integración de tecnologías actuales
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ⚡ Características Principales
 
-## Deploy on Vercel
+- **Diseño Responsivo**: Adaptación perfecta a cualquier dispositivo
+- **Modo Oscuro/Claro**: Sistema de temas basado en preferencias del usuario
+- **Animaciones Fluidas**: Implementadas con Framer Motion
+- **Navegación Inteligente**: Detección de sección activa por scroll
+- **Optimización de Imágenes**: Uso de next/image para mejor rendimiento
+- **Tipado Estricto**: TypeScript para mayor seguridad
+- **Estilos Modulares**: SASS con arquitectura escalable
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠 Tecnologías Utilizadas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 14
+- TypeScript
+- Framer Motion
+- SASS
+- Cloudinary
+- Lucide Icons
+
+## 📱 Responsive Design
+
+El sitio está completamente optimizado para:
+
+- Móviles (desde 320px)
+- Tablets (desde 768px)
+- Desktops (desde 1024px)
+- Pantallas grandes (desde 1440px)
+
+## 🎯 Objetivos Educativos
+
+Este proyecto fue desarrollado con fines de aprendizaje, enfocándose en:
+
+1. Implementación de arquitectura moderna en Next.js
+2. Manejo avanzado de estados y animaciones
+3. Optimización de rendimiento y SEO
+4. Prácticas de accesibilidad web
+5. Sistemas de diseño escalables
+
+## 📝 Nota Legal
+
+Este proyecto es un clon educativo y no tiene afiliación oficial con CARMENET. Todos los derechos de marca y contenido pertenecen a sus respectivos dueños.
+
+## 👨‍💻 Desarrollo
+
+Por [SHUN DEV](https://github.com/Luis-Fernando-MP) - Un desarrollador gustoso de crear experiencias web interesantes.
+
+## 📬 Contacto
+
+Para cualquier consulta sobre el desarrollo de este proyecto:
+
+- GitHub: [@Shundev](https://github.com/Luis-Fernando-MP)
+- Portfolio: [shundev.site](https://luisjp.vercel.app/)
+
+---
+
+Desarrollado con 🍷 por SHUN DEV
