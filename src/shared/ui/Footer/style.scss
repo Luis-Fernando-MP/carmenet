@@ -47,8 +47,15 @@
     color: rgb(v.$fn2);
   }
 
-  &-fn {
-    color: rgb(v.$tn1);
+  &-shun {
+    display: inline-block;
+
+    padding: 5px;
+
+    color: rgb(v.$fn1);
+    text-decoration: line-through;
+
+    background-color: rgb(v.$tn1);
   }
 
   &-follow {
@@ -57,6 +64,10 @@
 
       a {
         padding: v.$padding * 0.5;
+
+        &.active {
+          border-radius: v.$radius;
+        }
       }
     }
 

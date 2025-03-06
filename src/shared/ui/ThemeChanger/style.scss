@@ -1,3 +1,5 @@
+@use '@sass/config/vars' as v;
+
 .themeChanger {
   cursor: pointer;
 
@@ -5,17 +7,11 @@
   align-items: center;
   justify-content: center;
 
-  width: 3rem;
-  height: 3rem;
-  border: none;
-  border-radius: 50%;
-
-  background: var(--primary-color);
-  box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+  padding: v.$padding;
 
   &-icon {
     width: 1.5rem;
     height: 1.5rem;
-    color: var(--background-color);
+    color: rgb(v.$bg1);
   }
 }
