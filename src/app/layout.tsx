@@ -2,6 +2,7 @@ import Hydration from '@/shared/components/Hydration'
 import Offline from '@/shared/components/Offline'
 import { bodyFonts } from '@/shared/fonts'
 import '@sass/config/global.scss'
+import { ViewTransitions } from 'next-view-transitions'
 import NextTopLoader from 'nextjs-toploader'
 import type { JSX, ReactNode } from 'react'
 import { Toaster } from 'react-hot-toast'
@@ -20,7 +21,9 @@ const RootLayout = async ({ children }: IRootLayout): Promise<JSX.Element> => {
       <body className={`${bodyFonts} antialiased`}>
         <NextTopLoader color='rgb(var(--tn-primary))' showSpinner={false} />
         <div className='mainBackground' />
-        <Hydration>{children}</Hydration>
+        <Hydration>
+          <ViewTransitions>{children}</ViewTransitions>
+        </Hydration>
         <Offline />
         <Toaster
           position='top-center'
