@@ -1,0 +1,16 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen {
+  .header {
+    &-title,
+    .font3 {
+      font-size: 2.5rem;
+      line-height: normal;
+    }
+
+    &-paragraph {
+      width: 90%;
+    }
+  }
+}

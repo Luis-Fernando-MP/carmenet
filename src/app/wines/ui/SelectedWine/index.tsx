@@ -11,6 +11,7 @@ import type { JSX } from 'react'
 
 import { wines } from '../../store/wines'
 import './style.scss'
+import './userMobile.scss'
 
 const SelectedWine = (): JSX.Element | null => {
   const { wineId } = UseWineStoreStore()

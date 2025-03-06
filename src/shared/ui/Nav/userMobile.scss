@@ -1,0 +1,40 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/media' as m;
+
+@include m.mediumScreen {
+  .nav {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    min-width: fit-content;
+  }
+}
+
+@include m.smallScreen {
+  .nav {
+    &-sites {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &-logo {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    &-menu {
+      display: block;
+    }
+  }
+}
+
+@include m.smallerScreen {
+  .nav {
+    &-logo {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen {
+  .poetry {
+    &-title,
+    .font3 {
+      font-size: 4rem;
+      line-height: 4.5rem;
+      text-align: center;
+    }
+
+    &-title {
+      width: 100%;
+    }
+
+    &-stats {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: v.$padding * 3;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-paragraph {
+      text-align: center;
+    }
+
+    &-gradient {
+      width: 350px;
+      height: 350px;
+    }
+
+    &-stat {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: v.$fH1;
+      }
+    }
+  }
+}
+
+@include m.smallerScreen {
+  .poetry {
+    &-title,
+    .font3 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      text-align: center;
+    }
+
+    &-paragraph {
+      font-size: v.$fH4;
+    }
+
+    &-stat {
+      text-align: center;
+
+      h2 {
+        font-size: v.$fH2;
+      }
+
+      p {
+        font-size: v.$fH4;
+      }
+    }
+
+    &-gradient {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

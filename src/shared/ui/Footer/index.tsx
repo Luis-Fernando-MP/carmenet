@@ -5,6 +5,7 @@ import type { JSX } from 'react'
 
 import LoadLogo from '../LoadLogo'
 import './style.scss'
+import './userMobile.scss'
 
 const Footer = (): JSX.Element => {
   return (

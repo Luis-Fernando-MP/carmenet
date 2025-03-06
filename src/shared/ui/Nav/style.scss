@@ -24,8 +24,31 @@
     @include d.flex($ali: center, $dir: row);
   }
 
+  &-sites.open {
+    display: flex;
+  }
+
   &-logo {
-    width: 130px;
+    justify-content: space-between;
+    width: 70px;
+
+    @include d.flex($ali: center, $dir: row);
+
+    img {
+      width: 70px;
+      max-height: 70px;
+      object-fit: cover;
+    }
+  }
+
+  &-menu {
+    display: none;
+
+    padding: v.$padding;
+    border-radius: v.$radius;
+
+    background-color: rgb(v.$bg1, 0.6);
+    backdrop-filter: blur(20px);
   }
 
   &-link {

@@ -1,0 +1,59 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/media' as m;
+@use '@sass/utils/defs' as d;
+
+@include m.mediumScreen {
+  .listOfWines {
+    gap: v.$padding;
+    justify-content: center;
+    width: 100%;
+
+    &-item {
+      width: 150px;
+      height: 300px;
+    }
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    &-title {
+      left: v.$padding;
+      font-size: 1.5rem;
+    }
+
+    &-price {
+      right: 0;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@include m.smallScreen {
+  .selectedWine {
+    &-image {
+      width: 100%;
+      min-width: 100%;
+    }
+
+    &-details {
+      width: 100%;
+      max-width: 100%;
+      padding: v.$padding;
+
+      h3 {
+        font-size: v.$fH5;
+      }
+    }
+
+    &-headTitle {
+      &,
+      span {
+        font-size: v.$fH1;
+      }
+    }
+  }
+}

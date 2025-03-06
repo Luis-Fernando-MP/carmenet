@@ -4,19 +4,6 @@
 .header {
   $gap: v.$padding * 3;
 
-  &-logo {
-    justify-content: center;
-    height: 200px;
-
-    @include d.flex;
-
-    img {
-      width: 70px;
-      height: 120px;
-      object-fit: cover;
-    }
-  }
-
   &-title,
   .font3 {
     font-size: 4rem;
@@ -26,7 +13,7 @@
   }
 
   &-paragraph {
-    max-width: 600px;
+    width: 600px;
     font-size: v.$fH3;
     text-align: center;
   }

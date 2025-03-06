@@ -9,6 +9,7 @@ import Mission from './ui/Mission'
 import Poetry from './ui/Poetry'
 import Testimonies from './ui/Testimonies'
 import Winemaker from './ui/Winemaker'
+import './userMobile.scss'
 
 const Home = (): JSX.Element => {
   return (

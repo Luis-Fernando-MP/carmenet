@@ -1,0 +1,35 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/media' as m;
+
+@include m.mediumScreen {
+  .aboutUs {
+    &-bento {
+      grid-template-columns: 100%;
+    }
+
+    &-item {
+      width: fit-content !important;
+      margin: auto;
+      border-radius: v.$radius !important;
+
+      &:nth-child(3) {
+        grid-column: span 1;
+      }
+    }
+  }
+}
+
+@include m.smallerScreen {
+  .aboutUs {
+    &-item {
+      width: 100% !important;
+      min-height: fit-content;
+
+      &__paragraph {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

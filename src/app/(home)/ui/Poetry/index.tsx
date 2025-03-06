@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import type { JSX } from 'react'
 
 import './style.scss'
+import './userMobile.scss'
 
 const Poetry = (): JSX.Element => {
   return (

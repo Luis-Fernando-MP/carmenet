@@ -1,11 +1,15 @@
+'use client'
+
+import { acl } from '@/shared/acl'
 import { CARMENET_WEBSITE } from '@/shared/constants'
-import { GlobeIcon } from 'lucide-react'
+import { GlobeIcon, MenuIcon } from 'lucide-react'
 import Link from 'next/link'
-import type { JSX } from 'react'
+import { type JSX, useState } from 'react'
 
 import LoadLogo from '../LoadLogo'
 import ThemeChanger from '../ThemeChanger'
 import './style.scss'
+import './userMobile.scss'
 
 const links = {
   Misión: '/#mission',
@@ -15,13 +19,23 @@ const links = {
 }
 
 const Nav = (): JSX.Element => {
+  const [isOpen, setIsOpen] = useState(false)
+  const handleOpen = (): void => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <nav className='nav'>
-      <Link href='/' className='nav-logo'>
-        <LoadLogo src='/logoV2' />
-      </Link>
+      <div className='nav-logo'>
+        <Link href='/'>
+          <LoadLogo src='/logoV2' />
+        </Link>
+        <button className='nav-menu' onClick={handleOpen}>
+          <MenuIcon />
+        </button>
+      </div>
 
-      <div className='nav-sites'>
+      <div className={`nav-sites ${acl(isOpen, 'open')}`}>
         {Object.entries(links).map(link => {
           const [name, url] = link
           return (

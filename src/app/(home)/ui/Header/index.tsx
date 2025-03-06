@@ -5,6 +5,7 @@ import { WineIcon } from 'lucide-react'
 import type { JSX } from 'react'
 
 import './style.scss'
+import './userMobile.scss'
 
 const Header = (): JSX.Element => {
   return (

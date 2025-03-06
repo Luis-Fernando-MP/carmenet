@@ -1,0 +1,23 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen {
+  .home {
+    &-wrapper {
+      gap: 50px;
+    }
+
+    &-section {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+}
+
+@include m.mediumScreen {
+  .home {
+    &-wrapper {
+      gap: 30px;
+    }
+  }
+}

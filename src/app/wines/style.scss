@@ -25,16 +25,14 @@
 
   &-headTitle {
     display: inline;
-    align-items: center;
     max-width: 900px;
+    text-align: center;
 
-    h3 {
-      display: inline;
-      font-size: 6rem;
-
-      &:last-child {
-        margin-left: v.$padding;
-      }
+    &,
+    span {
+      font-size: 5rem;
+      text-transform: uppercase;
+      text-wrap: wrap;
     }
   }
 }

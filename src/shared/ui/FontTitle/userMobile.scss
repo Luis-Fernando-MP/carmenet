@@ -1,0 +1,29 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/media' as m;
+@use '@sass/utils/defs' as d;
+
+@include m.smallScreen {
+  .fontTitle {
+    justify-content: center;
+    width: 100%;
+    min-width: 100%;
+
+    &-text {
+      justify-content: center;
+
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@include m.smallerScreen {
+  .footer {
+    &-carmenet {
+      section {
+        width: 100%;
+      }
+    }
+  }
+}

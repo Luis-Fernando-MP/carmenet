@@ -8,6 +8,7 @@ import 'next-cloudinary/dist/cld-video-player.css'
 import type { JSX } from 'react'
 
 import './style.scss'
+import './userMobile.scss'
 
 const Mission = (): JSX.Element => {
   return (
@@ -65,9 +66,9 @@ const Mission = (): JSX.Element => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 1.4 }}
+          className='mission-videoPlayer'
         >
           <CldVideoPlayer
-            className='mission-videoPlayer'
             src='/projects/xsqmmliqtll0rjkl3cg6'
             width='920'
             height='500'

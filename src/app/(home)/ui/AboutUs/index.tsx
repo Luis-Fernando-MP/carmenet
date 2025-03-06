@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import type { JSX } from 'react'
 
 import './style.scss'
+import './userMobile.scss'
 
 const AboutUs = (): JSX.Element => {
   return (
@@ -55,7 +56,7 @@ const AboutUs = (): JSX.Element => {
         ))}
 
         <motion.div
-          className='aboutUs-item col-span-2 border'
+          className='aboutUs-item border'
           initial={{ scale: 0.95, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}

@@ -1,0 +1,26 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/media' as m;
+
+@include m.mediumScreen {
+  .winemaker {
+    &-author {
+      width: fit-content;
+      margin: auto;
+    }
+  }
+}
+
+@include m.smallerScreen {
+  .winemaker {
+    &-phrase,
+    .font3 {
+      font-size: 1.5rem;
+      line-height: normal;
+    }
+
+    &-paragraph,
+    span {
+      font-size: v.$fH5;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/media' as m;
+@use '@sass/utils/defs' as d;
+
+@include m.mediumScreen {
+  .wines {
+    .fontTitle {
+      width: 100%;
+    }
+
+    &-wrapper {
+      gap: 50px;
+    }
+
+    &-headTitle {
+      display: grid;
+      width: 100%;
+      max-width: 100%;
+
+      &,
+      span {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+@include m.smallerScreen {
+  .wines {
+    &-headTitle {
+      &,
+      span {
+        font-size: v.$fH1;
+      }
+    }
+  }
+}

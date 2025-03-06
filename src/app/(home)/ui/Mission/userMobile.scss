@@ -1,0 +1,43 @@
+@use '@sass/config/vars' as v;
+@use '@sass/utils/media' as m;
+
+@include m.largeScreen {
+  .mission {
+    &-paragraph {
+      max-width: 100%;
+      font-size: v.$fH4;
+    }
+
+    &-video {
+      height: fit-content;
+      min-height: 300px;
+    }
+
+    &-videoPlayer {
+      height: 100%;
+    }
+  }
+}
+
+@include m.smallerScreen {
+  .mission {
+    &-company {
+      left: 0;
+      transform: translateX(0);
+      flex-wrap: wrap;
+      width: fit-content;
+
+      h3 {
+        font-size: v.$fH5;
+      }
+    }
+
+    &-videoPlayer {
+      > div,
+      > div > div,
+      .cld-video-player {
+        height: 300px !important;
+      }
+    }
+  }
+}

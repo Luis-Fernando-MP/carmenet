@@ -1,6 +1,7 @@
 import { JSX } from 'react'
 
 import './style.scss'
+import './userMobile.scss'
 
 interface IFontTitle {
   principal: string
