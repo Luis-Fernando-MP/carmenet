@@ -1,5 +1,3 @@
-¡Claro! Aquí tienes el contenido actualizado con los badges de `shields.io`:
-
 # 🍷 Clon del Sitio Web de CARMENET
 
 <div style="margin: 20px 0">
